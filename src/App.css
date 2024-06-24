@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: #8758ff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.to-do-list {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.to-do-list div input {
+  font-size: 1rem;
+  outline: none;
+  background: none;
+  border: 2px solid #dbcefc;
+  padding: 0.6rem 1rem;
+  width: 300px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.to-do-list input::placeholder {
+  color: #ffffff7b;
+}
+
+.to-do-list .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button {
+  text-transform: uppercase;
+  /* background-color: rgb(17, 201, 0); */
+  background-image: linear-gradient(95.2deg, rgba(173, 252, 234, 1) 26.8%, rgba(192, 229, 246, 1) 64%);
+  color: rgb(60, 55, 55);
+  border: none;
+  /* border-radius: 4px; */
+  padding: 11px 24px;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-image: linear-gradient(95.2deg, rgb(159, 225, 210) 26.8%, rgb(154, 186, 201) 64%);
+  transition: all 0.5s ease-in-out;
+  color: white;
+  /* background-color: rgb(14, 163, 1); */
+}
+
+.to-do-list ol {
+  margin-top: 2rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 6px 30px;
+  font-size: 1.2rem;
+  background-color: rgb(223, 247, 247);
+  border: 2px solid rgba(138, 138, 138, 0.162);
+  /* border-radius: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li span {
+  padding-right: 2rem;
+}
+
+.delete-button {
+  margin: 0px 4px;
+  background-color: rgb(243, 2, 2);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: rgb(190, 0, 0);
+}
+
+.move-button {
+  margin: 0px 4px;
+  background-color: rgb(252, 218, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 14px;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.move-button:hover {
+  background-color: rgb(252, 176, 0);
 }
